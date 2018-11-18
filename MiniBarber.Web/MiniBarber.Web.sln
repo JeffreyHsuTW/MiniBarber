@@ -5,6 +5,20 @@ VisualStudioVersion = 15.0.28010.2046
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBarber.Web", "MiniBarber.Web\MiniBarber.Web.csproj", "{D5F09162-45CE-4BC5-B0BC-40BA491AF622}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{387E7853-8BD9-49C7-9144-43EC7CDF7E33}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBarber.Models", "..\MiniBarber.Models\MiniBarber.Models\MiniBarber.Models.csproj", "{B3BCC553-DEC3-4020-875F-891879AC4F15}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{AA56FF3E-FD21-46AD-A5BC-86078F81D965}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBarber.Services.Api", "Services\MiniBarber.Services.Api\MiniBarber.Services.Api.csproj", "{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{5EDBB354-8CC1-4107-893B-AE3757FBDAA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBarber.Web.Utilities.Log", "Utilities\MiniBarber.Web.Utilities.Log\MiniBarber.Web.Utilities.Log.csproj", "{8421E507-CB4F-4708-8401-2985279AE4C1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiniBarber.Web.Utilities", "Utilities\MiniBarber.Web.Utilities\MiniBarber.Web.Utilities.csproj", "{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +29,31 @@ Global
 		{D5F09162-45CE-4BC5-B0BC-40BA491AF622}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5F09162-45CE-4BC5-B0BC-40BA491AF622}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5F09162-45CE-4BC5-B0BC-40BA491AF622}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3BCC553-DEC3-4020-875F-891879AC4F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3BCC553-DEC3-4020-875F-891879AC4F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3BCC553-DEC3-4020-875F-891879AC4F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3BCC553-DEC3-4020-875F-891879AC4F15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8421E507-CB4F-4708-8401-2985279AE4C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8421E507-CB4F-4708-8401-2985279AE4C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8421E507-CB4F-4708-8401-2985279AE4C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8421E507-CB4F-4708-8401-2985279AE4C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3BCC553-DEC3-4020-875F-891879AC4F15} = {387E7853-8BD9-49C7-9144-43EC7CDF7E33}
+		{0B559C3C-05F3-42A0-9F6F-5D5AFFF39218} = {AA56FF3E-FD21-46AD-A5BC-86078F81D965}
+		{8421E507-CB4F-4708-8401-2985279AE4C1} = {5EDBB354-8CC1-4107-893B-AE3757FBDAA9}
+		{0F0CB652-1FAE-49CB-8B0C-11C3F33B6249} = {5EDBB354-8CC1-4107-893B-AE3757FBDAA9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD420438-C30E-43E6-88ED-A64B09CCB049}

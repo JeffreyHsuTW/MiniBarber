@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>SB Admin - Dashboard</title>
+    <title>Mini Barber</title>
     <!-- Bootstrap core CSS-->
     @Styles.Render("~/Content/BootstrapCore")
     <!-- Custom fonts for this template-->
@@ -21,10 +21,12 @@
     <div id="wrapper">
         @Html.Partial("~/Views/Shared/Base/_Menu.cshtml")
         <div id="content-wrapper">
-            @RenderBody()
+            <div class="container-fluid">
+                @RenderBody()
             
-            <!-- /.container-fluid -->
-            @Html.Partial("~/Views/Shared/Base/_Footer.cshtml")
+                <!-- /.container-fluid -->
+                @Html.Partial("~/Views/Shared/Base/_Footer.cshtml")
+                </div>
         </div>
         <!-- /.content-wrapper -->
     </div>

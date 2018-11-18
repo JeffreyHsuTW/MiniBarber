@@ -1,0 +1,66 @@
+﻿@model MiniBarber.Web.ViewModels.Employee.AddEmployeeViewModel
+
+<!-- Breadcrumbs-->
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+        <a href="@Url.Action("Employees", "Employee")">員工列表</a>
+    </li>
+    <li class="breadcrumb-item active">新增員工</li>
+</ol>
+
+
+<div class="card">
+    <div class="card-header">員工資料</div>
+    <div class="card-body">
+        @using (Html.BeginForm("AddEmployee", "Employee", FormMethod.Post, new { @enctype="multipart/form-data" }))
+        {
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <label for="inputName">姓名</label>
+                @Html.TextBoxFor(m => m.Name, new { id = "inputName", @type = "text", @class = "form-control", @required = "" })
+            </div>
+            <div class="form-group col-md-3">
+                <label for="selectGender">性別</label>
+                @Html.DropDownListFor(m => m.Gender, Model.GenderSelect, new { @id = "selectGender", @class = "form-control" })
+            </div>
+            <div class="form-group col-md-3">
+                <label for="selectPosition">職位</label>
+                @Html.DropDownListFor(m => m.PositionId, Model.PositionSelect, new { @id = "selectPosition", @class = "form-control" })
+            </div>
+            <div class="form-group col-md-3">
+                <label for="inputEmployeeId">員工編號</label>
+                @Html.TextBoxFor(m => m.EmployeeId, new { id = "inputEmployeeId", @type = "number", @class = "form-control", @required = "" })
+            </div>
+        </div>
+
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="inputTelHome">家裡電話</label>
+                    @Html.TextBoxFor(m => m.TelHome, new { id = "inputTelHome", @type = "text", @class = "form-control" })
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputTelPhone">手機</label>
+                    @Html.TextBoxFor(m => m.TelPhone, new { id = "inputTelPhone", @type = "text", @class = "form-control" })
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputTelContact">連絡人電話 *</label>
+                    @Html.TextBoxFor(m => m.TelContact, new { id = "inputTelContact", @type = "text", @class = "form-control", @required = "" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="inputAddressReg">戶籍地址</label>
+                @Html.TextBoxFor(m => m.AddressReg, new { id = "inputAddressReg", @type = "text", @class = "form-control" })
+            </div>
+            <div class="form-group">
+                <label for="inputAddressMalling">通訊地址 *</label>
+                @Html.TextBoxFor(m => m.AddressMalling, new { id = "inputAddressMalling", @type = "text", @class = "form-control", @required = "" })
+            </div>
+            <div class="form-group">
+                <label for="inputEmail">Email</label>
+                @Html.TextBoxFor(m => m.Email, new { id = "inputEmail", @type = "text", @class = "form-control" })
+            </div>
+            <button type="submit" class="btn btn-primary">送出</button>
+        }
+    </div>
+</div>
